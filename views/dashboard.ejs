@@ -1,0 +1,13 @@
+
+<% if (!user) { %>
+  <h1>Sorry, you do not have permission</h1>
+<% } %>
+
+<% if (user.role == 'candidate') { %>
+  <h1><%= user.role %></h1>
+<% } %> 
+
+<% if (user.role == 'admin') { %>
+  <%- include('components/adminMenu'); %>
+<% } %>
+

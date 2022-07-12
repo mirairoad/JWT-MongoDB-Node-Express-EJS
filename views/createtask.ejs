@@ -1,0 +1,55 @@
+
+<form action="/tasks" method="POST">
+    <h2>TasksTest</h2>
+  
+    <label for="title">Title</label>
+    <input type="text" name="title" required />
+
+    <label for="description">Description</label>
+    <input type="text" name="description" required />
+    <p class="message error"></p>
+  
+    <button>Submit</button>
+  </form>
+
+<script>
+  const form = document.querySelector('form');
+  const titleError = document.querySelector('.title.error');
+  const descriptionError = document.querySelector('.description.error');
+  const message = document.querySelector('.message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // get values
+    const title = form.title.value;
+    const description = form.description.value;
+   
+
+    try {
+      const res = await fetch('/tasks', { 
+        method: 'POST', 
+        body: JSON.stringify({ title, description }),
+        headers: {'Content-Type': 'application/json'}
+      });
+      const data = await res.json();
+
+      if (data.message === "success") {
+        form.title.value = '';
+        form.description.value = '';
+        return message.innerText = data.message;
+      }
+
+      if (data.message === "failed") {
+        form.title.value = '';
+        form.description.value = '';
+        return message.innerText += data.message;
+      }
+
+    }
+    catch (err) {
+      console.log(err);
+    }
+
+  });
+</script>

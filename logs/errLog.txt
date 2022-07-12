@@ -1,0 +1,124 @@
+20220319	15:01:35	5c433739-4cb3-4f98-880d-ee79ab352a3b	ReferenceError: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'candidate') { %>
+ >> 12|   <%- location.assign('/logout') %>
+    13| <% } %> 
+    14| 
+    15| <%- include('partials/footer'); -%>
+
+location is not defined
+20220319	15:01:36	2b0864de-0836-4135-88d8-3ecd383db49b	ReferenceError: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'candidate') { %>
+ >> 12|   <%- location.assign('/logout') %>
+    13| <% } %> 
+    14| 
+    15| <%- include('partials/footer'); -%>
+
+location is not defined
+20220319	15:02:02	5005d18e-22fd-434f-b2de-6ed7bf46296c	ReferenceError: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'candidate') { %>
+ >> 12|   <% location.assign('/logout') %>
+    13| <% } %> 
+    14| 
+    15| <%- include('partials/footer'); -%>
+
+location is not defined
+20220319	15:02:03	150996e8-d9ce-4e30-9191-eee08acf8488	ReferenceError: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'candidate') { %>
+ >> 12|   <% location.assign('/logout') %>
+    13| <% } %> 
+    14| 
+    15| <%- include('partials/footer'); -%>
+
+location is not defined
+20220319	15:02:42	818fb527-dba9-47ac-be3a-dff4c7876767	ReferenceError: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'candidate') { %>
+ >> 12|   <%- res.redirect('/logout') %>
+    13| <% } %> 
+    14| 
+    15| <%- include('partials/footer'); -%>
+
+res is not defined
+20220319	15:02:51	6f88b1dc-44d0-4cb1-8ede-46d7ac571ef8	ReferenceError: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'candidate') { %>
+ >> 12|   <%- redirect('/logout') %>
+    13| <% } %> 
+    14| 
+    15| <%- include('partials/footer'); -%>
+
+redirect is not defined
+20220319	15:10:00	719a2e67-97b8-4a4a-a45b-3601d17add6c	Error: /Users/leo/Work/SSR_Template/views/dashboard.ejs:12
+    10| 
+    11| <% if (user.role == 'admin') { %>
+ >> 12|   <%- include('components/adminMenu.js'); %>
+    13| <% } %>
+    14| 
+    15| 
+
+Could not find the include file "components/adminMenu.js"
+20220319	15:55:37	96158c29-80cf-4c9b-9263-3faa76cae1d2	Error: /Users/leo/Work/SSR_Template/views/createtask.ejs:1
+ >> 1| <%- include('partials/headers'); -%>
+    2| 
+    3| <form action="/tasks" method="POST">
+    4|     <h2>TasksTest</h2>
+
+Could not find the include file "partials/headers"
+20220319	17:47:36	d1ea3a2a-5372-4bb4-91df-36108d022496	Error: Not allowed by CORS
+20220319	17:47:39	1c90b7fe-36e0-4ab9-83d0-f34ce88f4ff6	Error: Not allowed by CORS
+20220319	17:48:05	152dbcb1-c815-41ef-8326-789d740bb01a	Error: Not allowed by CORS
+20220319	17:48:06	ece726bd-5025-4b5b-bda2-a1f12e027218	Error: Not allowed by CORS
+20220321	14:40:10	e6ca9dd9-de17-47a2-a9d1-80393d97d516	TypeError: Cannot read property 'replace' of undefined
+20220321	14:40:14	95b5cdcc-9f53-458d-a0b8-3f8e617e4c1e	TypeError: Cannot read property 'replace' of undefined
+20220321	14:40:45	d60d8e0e-edf3-413e-974a-6c2ee13b4345	Error: Not allowed by CORS
+20220321	14:40:45	3faa31b7-29ab-4977-92d9-723e65d67402	Error: Not allowed by CORS
+20220321	16:39:32	d4a737f5-c8a9-4ac0-98e7-b1daa3dc5c91	Error: Failed to lookup view "home" in views directory "/Users/leo/Work/SSR_Template/views"
+20220331	11:47:51	213f09c4-35dc-48c9-84cd-b1dee60e284f	Error: Not allowed by CORS
+20220331	11:48:08	09a8a234-1417-43f7-a4ec-37084abf3953	Error: Not allowed by CORS
+20220331	11:48:11	d56e9125-fa9a-4081-8aa4-6ed5b88cc28f	Error: Not allowed by CORS
+20220331	11:49:45	5bff5bb2-7b03-4400-91f1-7f49478a8a69	Error: Not allowed by CORS
+20220331	11:50:04	0682cc71-8fe3-42a3-91cd-9dff4e6cbc5f	Error: Not allowed by CORS
+20220331	11:50:16	72f25bdb-43f4-4672-b923-9b57fe880fdf	Error: Not allowed by CORS
+20220402	22:16:48	0234c928-0187-4a6c-b7fc-f0c09a89b998	ReferenceError: /Users/leo/API/SSR_Template/views/layouts/full-width.ejs:6
+    4|     <meta charset="UTF-8">
+    5|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ >> 6|     <title><%- title %></title>
+    7|     <link rel="stylesheet" href="css/main.css">
+    8| </head>
+    9| <body>
+
+title is not defined
+20220402	22:21:27	70ae781c-39bb-4538-be70-80a2fd2c083e	ReferenceError: /Users/leo/API/SSR_Template/views/layouts/full-width.ejs:6
+    4|         <meta charset="UTF-8">
+    5|         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ >> 6|         <title>SSR - <%-title-%></title>
+    7|         <link rel="stylesheet" href="http://localhost:1338/css/custom.css">
+    8|       </head>
+    9| <body>
+
+title is not defined
+20220403	00:16:04	8ea0d6af-a3e3-4743-845b-5f0aa8e268df	Error: Not allowed by CORS
+20220403	00:24:04	0d9f8351-32b6-422d-a8a5-efe03dfbeee9	Error: Not allowed by CORS
+20220403	00:26:53	ab0d5a02-b4bf-4ef1-9968-cbfaabc07c6a	Error: Not allowed by CORS
+20220403	00:26:57	a5edac41-bb5c-41dd-a179-805b863602d3	Error: Not allowed by CORS
+20220403	00:27:26	d219a1d9-037a-40ac-8495-9fcab4c04bd5	Error: Not allowed by CORS
+20220403	00:27:39	fe30cccf-742b-4c25-9bc9-70eb15117936	Error: Not allowed by CORS
+20220403	00:27:43	49d12a1e-3f9c-42e4-8d98-31b2b40d94ab	Error: Not allowed by CORS
+20220403	00:29:03	6e75fd02-0d4f-45f4-9e7a-d477d5f823bd	Error: Not allowed by CORS
+20220403	00:29:06	c8b5157a-08cd-48ba-b1d3-772a387328e8	Error: Not allowed by CORS
+20220403	00:29:32	cbee1b6f-d531-4540-8c6d-978a39d3cdef	Error: Not allowed by CORS
+20220403	00:29:51	8a914161-8c68-4987-a095-6ff5324a11c2	Error: Not allowed by CORS
+20220403	00:30:27	60ae4504-b968-4e96-b7e4-50b7b97e6d8d	Error: Not allowed by CORS
+20220403	00:30:33	3907f5d1-6a7d-4bac-9315-a4a214b47ae6	Error: Not allowed by CORS
+20220403	00:31:42	274d2b26-d236-44a5-a4d7-8d7ddde144ce	Error: Not allowed by CORS
+20220403	00:31:46	08a9fc1f-5f8c-4555-b8a0-c4a4aea43636	Error: Not allowed by CORS
+20220403	00:31:47	fca6f555-5127-43fa-bd42-3f3ea81f9c56	Error: Not allowed by CORS
+20220403	00:32:17	7f0b6676-5243-4959-9d94-f7616c33010b	Error: Not allowed by CORS
+20220403	00:32:47	127214ab-3af4-43a8-84bb-d13a6acea213	Error: Not allowed by CORS
+20220403	00:32:51	69f1016f-d334-4e86-8db3-03ef08adfbc2	Error: Not allowed by CORS
+20220621	16:09:29	8b3c0325-c040-4200-98e9-49a4e9db7e31	Error: Not allowed by CORS
+20220621	16:09:33	147df62e-c86e-4e53-a7e2-7817e88542f2	Error: Not allowed by CORS
